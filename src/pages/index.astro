@@ -3,18 +3,18 @@ import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Portfolio">
+<Layout title="Hendrick.dev">
 	<main class="flex flex-col items-center justify-start px-5 py-12 relative">
 		<div class="w-full max-w-sm flex flex-col items-center">
 			<div id="cube" class="w-[384px] h-[153px] bg-[#faa61a] rounded-xl flex justify-center  mb-14">
 				<img src="78098509.png" class="rounded-full w-20 h-20 border-4 border-white mt-28 aspect-auto" />
 			</div>
 
-			<h1 class="text-2xl font-bold mt-2 text-gray-800">Hendrick.dev</h1>
+			<h1 class="title">Hendrick.dev</h1>
 			<p class="text-gray-600 dark:text-gray-400 text-sm text-pretty text-center">Hello, I'm <span class="text-[#faa61a]">Hendrick</span> a hobbyist web developer/designer from	 the Dominican Republic, here are some projects I've worked on.</p>
-			
-			<div class="flex flex-col gap-2 w-full">
-				<h2 class="text-xl font-bold mt-2">Projects</h2>
+			<div class="gap-8 flex flex-col items-center">
+			<div class="flex flex-col gap-2 w-full ">
+				<h2 class="subtitle">Projects</h2>
 				<div class="text-gray-600">
 					<Card
 					title="SASU"
@@ -22,17 +22,58 @@ import Layout from '../layouts/Layout.astro';
 					href='https://github.com/Xhand98/SASU'
 					svg='steam.svg'
 					/>
+				<!-- 
+					<a href="https://supabase.com">
+						<img
+						width="168"
+						height="30"
+						src="https://supabase.com/badge-made-with-supabase-dark.svg"
+						alt="Made with Supabase"
+						/>
+					</a>
+				-->
 				</div>
 
 				<div class="text-gray-600">
 					<Card
 					title="Stapy"
-					body="Library that connects with steam Web API."
+					body="Library that connects with Steam Web API"
 					href='https://github.com/Xhand98/steam-api'
 					svg='key-solid.svg'
 					/>
 				</div>
 			</div>
+
+			<div class="flex flex-col gap-2 w-full">
+				<h2 class="subtitle">Donate</h2>
+				<div class="text-gray-600">
+					<Card
+					title="Ko-fi"
+					body="Buy me a cup of coffee"
+					href='https://github.com/Xhand98/SASU'
+					svg='kofi_s_logo_nolabel.svg'
+					/>
+				</div>
+
+				
+			</div>
+			<div  class="h-px w-full bg-gray-300 dark:bg-zinc-800"/>
+		</div>
 		</div>
 	</main>
 </Layout> 
+
+<style>
+	.title {
+		font-size: theme(fontSize.2xl);
+		font-weight: theme(fontWeight.bold);
+		color: theme(textColor.gray.800)
+	}
+
+	.subtitle {
+		font-size: theme(fontSize.xl);
+		font-weight: theme(fontWeight.bold);
+		color: theme(textColor.gray.800);
+		margin-top: theme(margin.2)
+	}
+</style>
