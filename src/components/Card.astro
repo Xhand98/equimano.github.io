@@ -11,7 +11,7 @@ const { href, title, body, svg } = Astro.props;
 
 <a href={href} target="_blank" class="flex rounded-xl flex-row bg-white gap-3 p-3">
 	<div class="shrink-0">
-		<img src={svg} alt="" class="w-[22px]">
+		<img src={svg} alt="" class="w-6">
 	</div>
 	<div class="font-medium flex-1 text-sm leading-6 line-clamp-1">{title} - {body}.</div>
 </a>
