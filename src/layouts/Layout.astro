@@ -15,8 +15,7 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/logo.svg" class="text-white"/>
 		<meta name="generator" content={Astro.generator} />
-		<!--<link href="https://unpkg.com/browse/tailwind@4.0.0/dist/tailwind.js" rel="stylesheet">-->
-		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="../pages/stylesglobals.css" />
 		<title>{title}</title>
 	</head>
 	<body>
@@ -29,6 +28,4 @@ const { title } = Astro.props;
 		font-family: 'Inter', system-ui, sans-serif;
 		background: #e5e7eb;
 	}
-
-	
 </style>
